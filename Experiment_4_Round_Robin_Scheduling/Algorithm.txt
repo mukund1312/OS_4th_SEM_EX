@@ -1,0 +1,11 @@
+Algorithm:
+1. Used for time sharing systems
+2. Pre-emption is added which enables system to switch between processes.
+3. A fixed time is allotted to each process, called quantum, for execution.
+4. A process is executed for the given time period that process us pre-empted and another
+process executes for the given time period.
+5. Context switching is used to save states of pre-empted processes.
+6. Enter total number of processes, enter their arrival time and burst time.
+7. Enter the time quantum for each process.
+8. Print the burst time, waiting time for each process.
+9. Calculate and print the total waiting time and total turnaround time.

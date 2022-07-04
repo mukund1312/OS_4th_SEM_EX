@@ -1,0 +1,15 @@
+Algorithm Writer Code:
+
+1. Initiate a variable key_t and store ftok and its path where to store .
+2. Using shmget , store the generated id in shmid .
+3. Using str take input .
+4. Write the string in str .
+5. End the Program.
+
+Algorithm For Reader Code:
+
+1. Get the key of shared memory using ftok command.
+2. Store the shmid that you get from shmget command using the key .
+3. Get the string that was previously written in memory .
+4. Use the shmdt command to pan the shmid .
+5. Exit the program.

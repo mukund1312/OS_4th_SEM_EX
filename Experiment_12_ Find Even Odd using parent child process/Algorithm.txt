@@ -1,0 +1,9 @@
+Algorithm:
+
+
+1. Use fork() function to create one child and one parent process
+2. For child process , fork() returns 0
+3. So we calculate sum of all odd numbers
+4. Fork() returns value greater than 0 for parent process
+5. So we calculate sum of even numbers
+6. We do so by just checking the value returned by fork() command

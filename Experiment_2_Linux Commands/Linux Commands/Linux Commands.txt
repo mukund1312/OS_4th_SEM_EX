@@ -1,0 +1,17 @@
+Commands:
+1. echo SRM – to display the string SRM
+2. clear – to clear the screen
+3. date – to display the current date and time
+4. cal 2003 – to display the calendar for the year 2003
+5. passwd – to change password
+6. pwd – prints working directory
+7. ls – list all files and directories use with -la to list hidden files
+8. mkdir & rmdir – To create and delete an empty directory respectively
+9. rm – Remove a file
+10. touch – Create almost any type of file from ‘.txt’ to ‘.zip’, can also update or modify file
+permissions.
+11. man & –help – These are used to get info about any command.
+12. cp – It is used to copy files from one dir to another or contents of one file to another.
+Requires source and destination
+13. mv – Used to move files and dirs. Requires source and destination
+14. locate – Find the location of a file.

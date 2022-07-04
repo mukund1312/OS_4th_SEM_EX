@@ -1,0 +1,7 @@
+Algorithm:
+
+1. Accept the size of list and the list given by user
+2. Create a child process using fork command
+3. In parent process implement insertion sort to sort the list and wait for child to finish
+4. In the child process implement insertion sort.
+5. Print out the results in the terminal.

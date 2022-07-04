@@ -1,0 +1,12 @@
+Procedure:
+
+Step 1: Start Ubuntu and open the terminal.
+Step 2: First Check whether nasm is install or not. If not then install in terminal by giving
+command as -
+$sudo apt-get update
+$sudo apt-get install nasm
+Step 3: For checking whether it install using command in terminal as - $nasm -h
+Step 4: For execution open terminal and type command as
+$nasm -f elf64 hello.nasm -o hello.o // -f : format
+$ld hello.o -o hello
+$ ./hello

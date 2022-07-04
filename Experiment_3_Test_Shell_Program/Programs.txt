@@ -1,0 +1,80 @@
+Q1. Shell program to list files in the current directory
+
+Algorithm:
+1. Enter the directory you want to search
+2. Use a for loop with a variable i to iterate through the directory files
+3. Increment the value of i after each iteration
+4. Use ‘echo $i’ command to print the name of the file
+Code:
+
+#!/bin/bash
+for i in *
+do
+echo $i
+done
+
+
+************************************************************************************************************
+Q2. Shell program to check if the file is executable or notAlgorithm:
+
+1. Enter the filename
+2. Read the filename
+3. Check if the file has “-x” permission
+4. If yes, print “file is executable”
+5. Else, print “file is not executable”
+
+Code:
+#!/bin/bash
+read file
+if[[-x “$file”]]
+then
+echo “file ‘$file’ is executable”
+else
+echo “file ‘$file’ is not executable”
+fi
+
+************************************************************************************************************
+Q3. Shell program to check the time and output good morning, good afternoon,
+
+Algorithm:
+1. Create a variable named hour
+2. Store the current date and time in it using $(date +"%H")
+3. If the time value lies between 6 to 12, print “good morning”
+4. If the time value lies between 12 to 16, print “good afternoon”
+5. If the time value lies between 16 to 20, print “good evening”
+
+Code:
+h=$(date +"%H")
+if [ $h -gt 6 -a $h -le 12 ]
+then
+echo “good morning”
+elif [ $h -gt 12 -a $h -le 16 ]
+then
+echo “good afternoon”
+elif [ $h -gt 16 -a $h -le 20 ]
+then
+echo “good evening”
+else
+echo “good night”
+Fi
+
+************************************************************************************************************
+
+Q4. Shell program to print all the days of a week and check if it is a weekday or weekendAlgorithm:
+1. echo weekday: $i gets called every iteration
+2. for loop yields an element every iteration to i variable.
+3. i is not an array index, increment i after every iteration
+4. Print weekday or weekend depending on value of i
+
+Code:
+#!/bin/bash
+i=1
+for i in mon tue wed thurs fri sat
+do
+if [ $i == fri ] || [ $i == sat ]
+then
+echo weekend: $i
+else
+echo weekday: $i
+fi
+Done

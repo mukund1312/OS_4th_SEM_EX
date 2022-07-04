@@ -1,0 +1,18 @@
+Algorithm for Write Code:
+
+1. Create a structure for the message queue to take in the message and store it.
+2. Initiate a variable key_t and store ftok and its path.
+3. Using msgget create a message queue and return the identifier.
+4. Use str to input data.
+5. Write a message into the string using mesg_text.
+6. Send a message using msgsnd .
+7. End Program .
+
+
+Algorithm for Read code:
+
+1. Get the key using ftok command.
+2. use msgget to create a message queue and return the identifier .
+3. Get the string that was previously written and print it using msgrcv.
+4. Destroy the message queue using msgctl.
+5. End program.

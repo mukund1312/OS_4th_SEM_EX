@@ -1,0 +1,11 @@
+Commands:
+1. cat – Displays content of a file
+2. new, vi, jed – Pre installed text editors in linux
+3. df – Tells about available disk space
+4. du – Tells about disk usage of a file in system
+5. uname – Shows info about Linux System
+6. apt-get – used to work with packages, download, install, update …
+7. chmod – Used to change permissions of a file in linux system
+8. hostname – Displays host name and ip address
+9. sudo – provides administrative privileges
+10. ping – Used to check connectivity of machine to server

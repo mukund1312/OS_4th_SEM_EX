@@ -1,0 +1,13 @@
+Algorithm:
+
+1. Any number of readers can read from the shared resource simultaneously, but only one
+writer can write to the shared resource at a time.
+2. A writer cannot write to the resource if there are any readers accessing the resource at that
+time
+3. Similarly, a reader cannot read if there is a writer accessing the resource or if there are any
+waiting writers
+4. Mutexes (pthread_mutex_t) – Mutual exclusion lock: Block access to variables by other
+threads. This enforces exclusive access by a thread to a variable or set of variables.
+5. Condition Variables (pthread_cond_t): The condition variable mechanism allows threads to
+suspend execution and relinquish the processor until some condition is true.
+6. The status of reader and writer is printed

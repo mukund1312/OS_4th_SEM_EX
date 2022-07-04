@@ -1,0 +1,7 @@
+Algorithm:
+
+1. Create a pipe.
+2. Send a message to the pipe.
+3. Retrieve the message from the pipe and write it to the standard output.
+4. Send another message to the pipe.
+5. Retrieve the message from the pipe and write it to the standard output.

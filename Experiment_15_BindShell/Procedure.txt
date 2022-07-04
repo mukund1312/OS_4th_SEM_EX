@@ -1,0 +1,22 @@
+Procedure:
+
+Step 1: Start the Ubuntu and open the terminal.
+Step 2: First Check whether nasm is install or not. If not then install in terminal by giving
+command as -
+$sudo apt-get update
+$sudo apt-get install nasm
+Step 3: For checking whether it install using command in terminal as -$nasm -h
+Step 4: For running the bindshell, write the code and save it in .nasm extension or get the
+code from the website http://shell-storm.org/shellcode/. Find code as Linux/x86-64 -
+bindshell port:4444 shellcode - 132 bytes
+Step 5: For execution open terminal and type command as
+$nasm -f elf64 bindshell.nasm -o bindshell.o // -f : format
+$ld bindshell.o -o bindshell
+$./bindshell
+Step 6: Now open new terminal and type
+$netstat –nlt //to check whether 4444 port is open after executing bindshell
+$nc localhost 4444 // netcat command connect localhost ls //list of directory
+pwd //current working directory w //User account
+exit//for terminating the connection
+Step 7: For disassembling the code
+$ objdump -D -M intel bindshell.o // Disassembling according to section wise.
